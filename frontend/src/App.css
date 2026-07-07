@@ -177,6 +177,63 @@
   padding: 20px 0;
 }
 
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.expense-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 10px 12px;
+  background: #fcfdff;
+  font-size: 1rem;
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.primary {
+  border: none;
+  background: linear-gradient(135deg, #4338ca, #6366f1);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(99, 102, 241, 0.4);
+}
+
+.form-error {
+  margin: 0;
+  color: #dc2626;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 640px) {
   .app-shell {
     padding: 24px 16px 40px;
