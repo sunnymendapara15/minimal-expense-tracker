@@ -21,9 +21,7 @@ const ExpenseList = ({ expenses }) => {
         <li key={expense.id} className="expense-item">
           <div className="expense-content">
             <div className="expense-label">{expense.category}</div>
-            <div className="expense-description">
-              {expense.description || "No description"}
-            </div>
+            <div>{expense.description || "No description"}</div>
             <div className="expense-meta">
               <span className="expense-date">{formatDate(expense.date)}</span>
             </div>
